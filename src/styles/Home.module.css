@@ -18,16 +18,21 @@
 }
 
 .description p {
-  max-width: 800px;
-  font-size: 25px;
+  max-width: 600px;
+  font-size: 18px;
   color: #4e4e4e;
   font-weight: 400;
 }
 
-.description button {
+.description h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0f0518;
+}
+.description .githubBtn {
   background: #fff;
   border-radius: 26px;
-  max-width: 300px;
+  max-width: 200px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -36,10 +41,89 @@
   margin: auto;
   border: 1px solid #ccc;
 }
-.description button div {
+
+.description .githubBtn div {
   display: flex;
-  gap: 1rem;
   align-items: center;
+}
+
+.create {
+  max-width: 600px;
+  font-size: 30px;
+}
+
+.createBtn {
+  background: #000 !important;
+  color: #fff !important;
+  border-radius: 26px !important;
+  max-width: 128px !important;
+  padding: 5px 30px !important;
+}
+
+.inspContainer .inspHeader {
+  font-size: 30px;
+  color: #000;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.inspInfo {
+  max-width: 560px !important;
+  font-size: 14px !important;
+}
+
+.inspMain {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
+
+.inspMainProduct {
+  display: flex;
+  flex-direction: column;
+}
+.inspFooter {
+  height: 5rem;
+  box-shadow: 0px -43px 145px 0px rgb(31 167 31);
+  padding: 1rem;
+  background: #000;
+  border-radius: 9px;
+  max-width: 800px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inspFooter p {
+  color: #ccc;
+}
+
+.inspFooterCircleArrow {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 870px) {
+  .inspFooter {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .inspFooter p {
+    font-size: 25px;
+    text-align: left;
+  }
+  .inspFooterCircleArrow {
+    margin-left: auto;
+    margin-top: 3rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .about {
