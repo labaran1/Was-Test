@@ -7,6 +7,40 @@
   margin: 0 auto;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  gap: 3rem;
+}
+
+.description p {
+  max-width: 800px;
+  font-size: 25px;
+  color: #4e4e4e;
+  font-weight: 400;
+}
+
+.description button {
+  background: #fff;
+  border-radius: 26px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  border: 1px solid #ccc;
+}
+.description button div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 @media screen and (max-width: 480px) {
   .about {
     margin-left: 1rem;

@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Styles from "./Product.module.css";
-import ProductIcon from "../Icons/Product";
 
 export default function Product() {
   return (
