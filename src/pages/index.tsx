@@ -1,7 +1,10 @@
-export default function Home() {
+import Navbar from "../Components/Layouts/Navbar";
+const Home = () => {
   return (
     <main>
-      <h1>Hello</h1>
+      <Navbar />
     </main>
   );
-}
+};
+
+export default Home;

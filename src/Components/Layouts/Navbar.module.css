@@ -1,0 +1,66 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 2rem;
+  align-items: center;
+}
+
+.logoSearch {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.logoSearch input {
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+  background: #dddee5;
+  font-size: 1rem;
+}
+
+.resources {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.resources ul {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resources button {
+  background: #0f0518;
+  color: #fff;
+  flex-grow: 1;
+  border-radius: 16px;
+  padding: 0.4rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.hamburgerMenu {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .resources {
+    flex-direction: row-reverse;
+  }
+
+  .resources ul {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+  }
+
+  .search {
+    display: none;
+  }
+}
