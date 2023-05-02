@@ -60,10 +60,11 @@
   padding: 5px 30px !important;
 }
 
-.inspContainer .inspHeader {
-  font-size: 30px;
+.inspHeader {
+  font-size: 27px !important;
   color: #000;
-  font-weight: 800;
+  font-weight: 600 !important;
+  font-weight: bolder;
   margin: 1rem 0;
 }
 
@@ -94,10 +95,23 @@
   align-items: center;
   justify-content: space-between;
 }
-.inspFooter p {
+.inspFooter p,
+.productFooter p {
   color: #ccc;
 }
 
+.vercelQuote {
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.vercelQuote p {
+  font-size: 16px;
+  color: #4e4e4e;
+}
 .inspFooterCircleArrow {
   background: #fff;
   display: flex;
@@ -107,16 +121,80 @@
   height: 40px;
   border-radius: 50%;
 }
+.publishContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productContainer {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.productFooter {
+  height: 5rem;
+  box-shadow: -1px -30px 81px 4px rgba(250, 116, 0, 0.75);
+  padding: 1rem;
+  background: #000;
+  border-radius: 9px;
+  max-width: 800px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.productCard {
+  background: #fff;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 500px;
+  gap: 1rem;
+}
+
+.productCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.productCardHeader p {
+  font-weight: bolder;
+}
+.productCardContent {
+  color: #4e4e4e;
+  font-size: 14px;
+}
+.productCardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #4e4e4e;
+}
+
+.productCardFooterIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
 
 @media screen and (max-width: 870px) {
-  .inspFooter {
+  .inspFooter,
+  .productFooter {
     flex-direction: column;
     height: auto;
     width: auto;
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  .inspFooter p {
+  .inspFooter p,
+  .productFooter p {
     font-size: 25px;
     text-align: left;
   }
@@ -124,10 +202,24 @@
     margin-left: auto;
     margin-top: 3rem;
   }
+  .productContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productCard {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
+
 @media screen and (max-width: 480px) {
   .about {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .productCardFooter {
+    width: auto;
+    gap: 0;
+    justify-content: space-between;
   }
 }

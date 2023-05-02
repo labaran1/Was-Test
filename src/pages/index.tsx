@@ -14,6 +14,12 @@ import JSProgrammingIcon from "@/Components/Icons/JSProgramming";
 import PythonProgrammingIcon from "@/Components/Icons/PythonProgramming";
 import GoProgrammingIcon from "@/Components/Icons/GoProgramming";
 import CirclePointerIcon from "@/Components/Icons/CirclePointer";
+import VercelIcon from "@/Components/Icons/VercelIcon";
+import SqliteIcon from "@/Components/Icons/Sqlite";
+import MonkeyIcon from "@/Components/Icons/MonkeyIcon";
+import BarIcon from "@/Components/Icons/BarIcon";
+import LoveIcon from "@/Components/Icons/LoveIcon";
+import ArrowDownIcon from "@/Components/Icons/ArrowDown";
 
 import { Button } from "@mui/material";
 const Home = () => {
@@ -117,7 +123,127 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <section className={Styles.vercelQuote}>
+          <p>This Programming tool makes it easier for apps to work anywhere</p>
+          <div>
+            <VercelIcon />
+          </div>
+        </section>
+
+        <section className={Styles.publishContainer}>
+          <Button
+            startIcon={<PublishStart style={{ width: "1rem" }} />}
+            className={Styles.createBtn}
+          >
+            Publish
+          </Button>
+          <p className={Styles.inspHeader}>Better together</p>
+          <p className={Styles.inspInfo}>
+            Using a binary for each platform and chip is the past. Rise above
+            with lightweight conternerized apps that simply run everywhere.
+          </p>
+        </section>
       </div>
+      <section className={Styles.productContainer}>
+        <div className={Styles.productCard}>
+          <div className={Styles.productCardHeader}>
+            <p>Spidermonkey</p>
+          </div>
+          <div className={Styles.productCardContent}>
+            <p>
+              {" "}
+              SpiderMonkey is Mozilla’s JavaScript and WebAssembly Engine, used
+              in Firefox, Servo and various other projects.
+            </p>
+          </div>
+          <div className={Styles.productCardFooter}>
+            <div className={Styles.productCardFooterIcon}>
+              <BarIcon />
+            </div>
+            |
+            <div className={Styles.productCardFooterIcon}>
+              <LoveIcon />
+              <p>574</p>
+            </div>
+            <div className={Styles.productCardFooterIcon}>
+              <ArrowDownIcon />
+              <p>4k</p>
+            </div>
+          </div>
+        </div>
+        <div className={Styles.productCard}>
+          <div className={Styles.productCardHeader}>
+            <SqliteIcon />
+            <p>Sqlite/sqlite</p>
+          </div>
+          <div className={Styles.productCardContent}>
+            <p>
+              SQLite is a C-language library that implements a small, fast,
+              self-contained, high-reliability, full-featured, SQL database
+              engine
+            </p>
+          </div>
+
+          <div className={Styles.productCardFooter}>
+            <div className={Styles.productCardFooterIcon}>
+              <BarIcon />
+            </div>
+            |
+            <div className={Styles.productCardFooterIcon}>
+              <LoveIcon />
+              <p>574</p>
+            </div>
+            <div className={Styles.productCardFooterIcon}>
+              <ArrowDownIcon />
+              <p>4k</p>
+            </div>
+          </div>
+        </div>
+        <div className={Styles.productCard}>
+          <div className={Styles.productCardHeader}>
+            <MonkeyIcon />
+            <p>Syrusakbary / r2</p>
+          </div>
+          <div className={Styles.productCardContent}>
+            <p>
+              cowsay is a program that generates ASCII pictures of a cow with a
+              message
+            </p>
+          </div>
+
+          <div className={Styles.productCardFooter}>
+            <div className={Styles.productCardFooterIcon}>
+              <BarIcon />
+            </div>
+            |
+            <div className={Styles.productCardFooterIcon}>
+              <LoveIcon />
+              <p>574</p>
+            </div>
+            <div className={Styles.productCardFooterIcon}>
+              <ArrowDownIcon />
+              <p>4k</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={`  ${Styles.productFooter}`}>
+        <div>
+          <p>All Languages, fully containerized & collaborative</p>
+        </div>
+        <div className={Styles.inspFooterCircleArrow}>
+          <CirclePointerIcon />{" "}
+        </div>
+      </section>
+      <section
+        className={`  ${Styles.vercelQuote}`}
+        style={{ margin: "auto", marginTop: "2rem" }}
+      >
+        <p>This Programming tool makes it easier for apps to work anywhere</p>
+        <div>
+          <VercelIcon />
+        </div>
+      </section>
     </main>
   );
 };
