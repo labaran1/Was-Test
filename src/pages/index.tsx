@@ -310,6 +310,20 @@ const Home = () => {
           <VercelIcon />
         </div>
       </section>
+
+      <section className={Styles.getStarted}>
+        <div>
+          <h1>Get Started</h1>
+          <p>
+            Join the vibrant Wasmer community.Create your first package, run it
+            from the shell and deploy it to the Edge
+          </p>
+        </div>
+
+        <div className={Styles.getStartedFooterCircleArrow}>
+          <CirclePointerIcon />{" "}
+        </div>
+      </section>
     </main>
   );
 };

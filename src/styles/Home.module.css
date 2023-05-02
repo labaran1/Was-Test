@@ -308,6 +308,41 @@
   border-radius: 4px;
 }
 
+.getStarted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 13rem;
+  box-shadow: 2px -16px 129px 16px rgba(212, 92, 24, 0.75);
+  padding: 1rem;
+  background: #000;
+  border-radius: 9px;
+  max-width: 800px;
+  width: 650px;
+  gap: 3rem;
+  color: #fff;
+  margin: 4rem auto;
+}
+
+.getStarted h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.getStarted p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.getStartedFooterCircleArrow {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-self: flex-end;
+}
 @media screen and (max-width: 870px) {
   .inspFooter,
   .productFooter,
@@ -348,6 +383,13 @@
   .deployProductCard:nth-of-type(2) .deployProductCardHeader {
     height: auto;
     padding-bottom: 1rem;
+  }
+
+  .getStarted {
+    width: auto;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
