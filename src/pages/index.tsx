@@ -22,6 +22,12 @@ import LoveIcon from "@/Components/Icons/LoveIcon";
 import ArrowDownIcon from "@/Components/Icons/ArrowDown";
 import WordPressIcon from "@/Components/Icons/WordPress";
 import DjangoIcon from "@/Components/Icons/Django";
+import Link from "next/link";
+import Logo from "@/Components/Icons/Logo";
+import LinkedInIcon from "@/Components/Icons/LinkedIn";
+import TwitterIcon from "@/Components/Icons/Twitter";
+import FbIcon from "@/Components/Icons/Facebook";
+import YouTubeIcon from "@/Components/Icons/Youtube";
 
 import { Button } from "@mui/material";
 const Home = () => {
@@ -324,6 +330,57 @@ const Home = () => {
           <CirclePointerIcon />{" "}
         </div>
       </section>
+
+      <footer className={Styles.footer}>
+        <section className={Styles.footerMain}>
+          <div>
+            <ul>
+              <li>
+                <Logo />
+              </li>
+              <li>Making software universally accessible</li>
+              <li className={Styles.footerSocial}>
+                <LinkedInIcon />
+                <TwitterIcon />
+                <FbIcon />
+                <YouTubeIcon />
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Explore</li>
+              <li>Packages</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>Products</li>
+              <li>Run</li>
+              <li>Publish</li>
+              <li>Deploy</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>Developers</li>
+              <li>Documentation</li>
+              <li>Runtime</li>
+              <li>Registry</li>
+              <li>Deploy</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className={Styles.footerSub}>
+          <Link href="#">Imprint</Link>
+          <Link href="#">Privacy</Link>
+          <Link href="#">Terms</Link>
+        </section>
+      </footer>
     </main>
   );
 };
