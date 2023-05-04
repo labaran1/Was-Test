@@ -24,18 +24,18 @@
   grid-gap: 2rem;
 }
 .productIconsBtn {
-  background: #fff;
-  color: #3c3544;
-  max-height: 4.2rem;
-  height: 4rem;
-  border-radius: 10px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  cursor: default;
+  background: #fff !important;
+  color: #3c3544 !important;
+  max-height: 4.2rem !important;
+  height: 4rem !important;
+  border-radius: 10px !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  cursor: default !important;
 }
 
 .productIconsBtn:hover {
-  background: #fff;
+  background: #fff !important;
 }
 .interactiveCode {
   position: absolute;
