@@ -5,6 +5,7 @@ import Logo from "../Icons/Logo";
 
 import HamburgerMenu from "../Icons/HamburgerMenu";
 import ProductCard from "./ProductCard";
+import DeveloperCard from "./DeveloperCard";
 
 const Navbar = () => {
   return (
@@ -25,9 +26,7 @@ const Navbar = () => {
         </div>
         <ul>
           <ProductCard />
-          <li>
-            <Link href="#">Developers</Link>
-          </li>
+          <DeveloperCard />
           <li>
             <Link href="#">Packages</Link>
           </li>
