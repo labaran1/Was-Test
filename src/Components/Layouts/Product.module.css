@@ -9,9 +9,34 @@
 
 .productIcons {
   width: 100%;
-  height: 25rem;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+.productIconsChild {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2rem;
+}
+.productIconsChild2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2rem;
+}
+.productIconsBtn {
+  background: #fff;
+  color: #3c3544;
+  max-height: 4.2rem;
+  height: 4rem;
+  border-radius: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  cursor: default;
 }
 
+.productIconsBtn:hover {
+  background: #fff;
+}
 .interactiveCode {
   position: absolute;
   height: 25rem;

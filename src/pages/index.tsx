@@ -28,6 +28,7 @@ import LinkedInIcon from "@/Components/Icons/LinkedIn";
 import TwitterIcon from "@/Components/Icons/Twitter";
 import FbIcon from "@/Components/Icons/Facebook";
 import YouTubeIcon from "@/Components/Icons/Youtube";
+import SpiderMonkeyIcon from "@/Components/Icons/SpiderMonkey";
 
 import { Button } from "@mui/material";
 const Home = () => {
@@ -155,6 +156,7 @@ const Home = () => {
       <section className={Styles.productContainer}>
         <div className={Styles.productCard}>
           <div className={Styles.productCardHeader}>
+            <SpiderMonkeyIcon />
             <p>Spidermonkey</p>
           </div>
           <div className={Styles.productCardContent}>
