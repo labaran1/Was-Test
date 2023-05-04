@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className={Styles.hamburgerMenu}>
           <HamburgerMenu />
         </div>
-        <ul>
+        <ul className={Styles.mainLinks}>
           <ProductCard />
           <DeveloperCard />
           <li>
