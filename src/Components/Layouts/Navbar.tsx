@@ -2,7 +2,9 @@ import React from "react";
 import Styles from "./Navbar.module.css";
 import Link from "next/link";
 import Logo from "../Icons/Logo";
+
 import HamburgerMenu from "../Icons/HamburgerMenu";
+import ProductCard from "./ProductCard";
 
 const Navbar = () => {
   return (
@@ -22,9 +24,7 @@ const Navbar = () => {
           <HamburgerMenu />
         </div>
         <ul>
-          <li>
-            <Link href="#">Products</Link>
-          </li>
+          <ProductCard />
           <li>
             <Link href="#">Developers</Link>
           </li>
